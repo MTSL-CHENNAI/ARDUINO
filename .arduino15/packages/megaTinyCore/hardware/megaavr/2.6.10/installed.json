@@ -1,0 +1,122 @@
+{
+  "packages": [
+    {
+      "name": "megaTinyCore",
+      "maintainer": "Spence Konde",
+      "websiteUrl": "https://github.com/SpenceKonde/megaTinyCore",
+      "Url": "http://drazzy.com/package_drazzy.com_index.json",
+      "email": "",
+      "platforms": [
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.10",
+          "deprecated": false,
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.10.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.10.tar.bz2",
+          "checksum": "SHA-256:62703a44f94a8033faac2f5283e3fe708d65a7cd5e1db8dd17edfaddee96f5da",
+          "size": "993438",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!\u003cbr/\u003e 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427\u003cbr/\u003e 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406\u003cbr/\u003e 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204\u003cbr/\u003e 8-pin parts: ATtiny412/402/212/202\u003cbr/\u003e Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and \u003cbr/\u003e upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.\u003c/br\u003e 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load\u003cbr/\u003e the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. \u003cbr/\u003e\u003cbr/\u003e The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above\u003cbr/\u003e or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "help": {},
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "python3",
+              "version": "3.7.2-post1"
+            }
+          ],
+          "discoveryDependencies": [],
+          "monitorDependencies": []
+        }
+      ],
+      "tools": [
+        {
+          "name": "python3",
+          "version": "3.7.2-post1",
+          "systems": [
+            {
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-3.7.2.post1-embed-win32v2a.zip",
+              "archiveFileName": "python3-3.7.2.post1-embed-win32v2a.zip",
+              "size": "6428926",
+              "checksum": "SHA-256:f57cb2daf86176d2929e7c58990c2ac32554e3219d454dcac10e464ddda35bf2"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-3.7.2.post1-embed-win32v2a.zip",
+              "archiveFileName": "python3-3.7.2.post1-embed-win32va2.zip",
+              "size": "6428926",
+              "checksum": "SHA-256:f57cb2daf86176d2929e7c58990c2ac32554e3219d454dcac10e464ddda35bf2"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "size": "292",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "size": "292",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "size": "292",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-macosx-portable.tar.gz",
+              "archiveFileName": "python3-macosx-portable.tar.gz",
+              "size": "25494144",
+              "checksum": "SHA-256:01a5bf1fa264c6f04cfaadf4c6e9f6caaacb6833ef40104dfbe953fcdb9bca1c"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "size": "292",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3"
+            }
+          ]
+        }
+      ],
+      "help": {}
+    }
+  ],
+  "IsTrusted": false
+}

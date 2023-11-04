@@ -1,0 +1,7 @@
+build_cache:
+  compilation_count_since_last_purge: 5
+installation:
+  id: c2fd38d8-00cf-4a30-9c8e-934389ba612d
+  secret: 21a67a84-4bc4-4306-b3cf-1d42d384a988
+updater:
+  last_check_time: "2023-11-04T06:38:07.349166608Z"
